@@ -9,13 +9,17 @@
  export default function Page() {
      return (
      <div>
+    
      <CountButton 
      incrementval = {1}
      //name = {"eric"}
+     color = {"Pink"}
      />
+
      <CountButton 
      incrementval = {2}
      //name = {"john"}
+     color = {"BlanchedAlmond"}
      />
      {/* <CountButton /> */}
 

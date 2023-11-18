@@ -44,6 +44,7 @@ export default function SearchBar() {
     <div>
         <p>The Search Bar!</p>
 
+
         <input type="text" value={searchString} onChange={handleChange}/>
 
         <div style={{display:"flex", flexFlow:"row wrap"}}>{filteredProducts}</div>

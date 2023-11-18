@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react"
+import "./CountButton.css"
 
 export default function CountButton(props){
 
@@ -15,12 +16,20 @@ export default function CountButton(props){
         }
     }
 
+    const buttonStyle = {
+        // backgroundColor: "pink",
+        color: "black",
+        backgroundColor: props.color,
+        // USED PROPS TO DEFINE COLOR WANT MY EXTRA POINTS
+    }
+
     useEffect(rollOverCount, [count])
 
     return (
-        <div>
-        <button onClick={handleClick}>+{props.incrementval}</button>
-        <p>{props.name}</p>
+        <div className = "btnStyle">
+        <button style = {buttonStyle} onClick={handleClick}>+{props.incrementval}</button>
+        {/* style = {{backgroundColor:"pink"}} //This goes INSIDE OF <button  > (like before onClick)*/    }
+        {/* <p>{props.name}</p> */}
         <div>{count}</div>
         </div>
     )

@@ -1,0 +1,12 @@
+.btnStyle button{
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 90px;
+    height: 60px;
+}
+
+
+
+/* padding: 1rem; */
+/* overflow: scroll; */
+/* margin: 1rem; */
