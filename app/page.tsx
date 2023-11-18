@@ -5,6 +5,7 @@
 
  "use client"
  import CountButton from "./CountButton"
+ import SearchBar from "./SearchBar/SearchBar"
  export default function Page() {
      return (
      <div>
@@ -21,7 +22,7 @@
      <hr />
      <a href="https://github.com/UnbrokenRogue/NextJSHW.git">Link to my github</a>
      <hr />
-     <p>Search Bar</p>
+     <SearchBar></SearchBar>
      </div>
      )
    }
